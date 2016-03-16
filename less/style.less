@@ -1,4 +1,6 @@
 @nav-font-color:rgba(249, 249, 249, .9);
+//default
+
 
 .navigation-menu{
     .menu-list{
@@ -11,29 +13,75 @@
         }
 
         li{
-            width: 16.667%;
             float: left;
             a{
                 text-decoration: none;
                 display: block;
-                font-size: 1.5em;
-                height: 9em;
-                width: auto;
                 color:@nav-font-color;
-                -webkit-transition:height .5s ease-in-out;
                 &:hover{
                     color:@nav-font-color;
-                    height: 10em;
-                    .label{
-                         margin-top: 3.2em;
-                    }
+                }
+            }
 
+            &:nth-child(6n+1){
+                background-color:rgb(208, 101, 3);
+            }
+
+            &:nth-child(6n+2){
+                background: rgb(233, 147, 26);
+
+            }
+
+            &:nth-child(6n+3){
+                background: rgb(22, 145, 190);
+            }
+
+            &:nth-child(6n+4){
+               background: rgb(22, 107, 162);
+            }
+
+            &:nth-child(6n+5){
+                background: rgb(27, 54, 71);
+            }
+
+            &:nth-child(6n+6){
+                background: rgb(21, 40, 54);
+            }
+
+        }
+    }
+
+
+}
+
+@media (min-width:50em){
+.navigation-menu{
+    .menu-list{
+        font-size: 1.5em;
+        &:hover{
+            a{
+            color:rgba(249, 249, 249, .5);
+           }
+        }
+
+        li{
+            width: 16.667%;
+            a{
+
+                height: 9em;
+                width: auto;
+                -webkit-transition:height .5s ease-in-out;
+                &:hover{
+                    height: 10em;
                     i{
                          box-shadow:0 0 0 0.5em rgba(255,255,255,.2);
                     }
 
-                }
+                    .label{
+                         margin-top: 3.2em;
+                    }
 
+                }
 
                 .icon{
                     font-size: 1.8em;
@@ -41,7 +89,10 @@
                     padding-top: 1.4em;
                     text-align: center;
 
-                    i{
+                  i{
+                    padding:0.4em;
+                    border-radius: 50%;
+                    background: rgba(255,255,255,0.1);
                     box-shadow: 0 0 0 0.8em transparent;
                     -webkit-transition:box-shadow .5s ease-in-out;
                   }
@@ -54,56 +105,42 @@
                     -webkit-transition:margin .5s ease-in-out;
 
                 }
-                i{
-                    padding:0.4em;
-                    border-radius: 50%;
-                    background: rgba(255,255,255,0.1);
-                }
+
 
 
 
             }
-
-
-
-
             &:nth-child(6n+1){
-                background-color:rgb(208, 101, 3);
                 &:hover{
                 border-bottom: 4px solid rgb(174, 78, 1);
                 }
             }
 
             &:nth-child(6n+2){
-                background: rgb(233, 147, 26);
                 &:hover{
                border-bottom: 4px solid rgb(191, 117, 20);
                 }
             }
 
             &:nth-child(6n+3){
-                background: rgb(22, 145, 190);
                 &:hover{
                 border-bottom: 4px solid rgb(12, 110, 149);
                 }
             }
 
             &:nth-child(6n+4){
-               background: rgb(22, 107, 162);
                &:hover{
                 border-bottom: 4px solid rgb(10, 75, 117);
                 }
             }
 
             &:nth-child(6n+5){
-                background: rgb(27, 54, 71);
                 &:hover{
                 border-bottom: 4px solid rgb(16, 34, 44);
                 }
             }
 
             &:nth-child(6n+6){
-                background: rgb(21, 40, 54);
                 &:hover{
                 border-bottom: 4px solid rgb(9, 18, 25);
                 }
@@ -113,4 +150,29 @@
     }
 
 
+}
+
+}
+
+//for screen with size 50em
+@media (min-width:32.5em) and (max-width:50em){
+    li{
+        width: 50%;
+        display:block;
+        a{
+            display: block;
+            font-size: 1em;
+            padding:.8em;
+            width: auto;
+            color:rgba(249, 249, 249, .9);
+            .icon{
+                display:inline-block;
+                width: 50%;
+            }
+            .label{
+                 display:inline-block;
+            }
+
+         }
+    }
 }

@@ -1,87 +1,116 @@
 .navigation-menu .menu-list {
   list-style: none;
   max-width: 1240px;
+  font-size: 1.5em;
 }
 .navigation-menu .menu-list:hover a {
   color: rgba(249, 249, 249, 0.5);
 }
 .navigation-menu .menu-list li {
-  width: 16.667%;
   float: left;
 }
 .navigation-menu .menu-list li a {
   text-decoration: none;
   display: block;
-  font-size: 1.5em;
-  height: 9em;
-  width: auto;
   color: rgba(249, 249, 249, 0.9);
-  -webkit-transition: height 0.5s ease-in-out;
 }
 .navigation-menu .menu-list li a:hover {
   color: rgba(249, 249, 249, 0.9);
-  height: 10em;
-}
-.navigation-menu .menu-list li a:hover .label {
-  margin-top: 3.2em;
-}
-.navigation-menu .menu-list li a:hover i {
-  box-shadow: 0 0 0 0.5em rgba(255, 255, 255, 0.2);
-}
-.navigation-menu .menu-list li a .icon {
-  font-size: 1.8em;
-  display: block;
-  padding-top: 1.4em;
-  text-align: center;
-}
-.navigation-menu .menu-list li a .icon i {
-  box-shadow: 0 0 0 0.8em transparent;
-  -webkit-transition: box-shadow 0.5s ease-in-out;
-}
-.navigation-menu .menu-list li a .label {
-  display: block;
-  margin-top: 2.1em;
-  text-align: center;
-  -webkit-transition: margin 0.5s ease-in-out;
-}
-.navigation-menu .menu-list li a i {
-  padding: 0.4em;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
 }
 .navigation-menu .menu-list li:nth-child(6n+1) {
   background-color: #d06503;
 }
-.navigation-menu .menu-list li:nth-child(6n+1):hover {
-  border-bottom: 4px solid #ae4e01;
-}
 .navigation-menu .menu-list li:nth-child(6n+2) {
   background: #e9931a;
-}
-.navigation-menu .menu-list li:nth-child(6n+2):hover {
-  border-bottom: 4px solid #bf7514;
 }
 .navigation-menu .menu-list li:nth-child(6n+3) {
   background: #1691be;
 }
-.navigation-menu .menu-list li:nth-child(6n+3):hover {
-  border-bottom: 4px solid #0c6e95;
-}
 .navigation-menu .menu-list li:nth-child(6n+4) {
   background: #166ba2;
-}
-.navigation-menu .menu-list li:nth-child(6n+4):hover {
-  border-bottom: 4px solid #0a4b75;
 }
 .navigation-menu .menu-list li:nth-child(6n+5) {
   background: #1b3647;
 }
-.navigation-menu .menu-list li:nth-child(6n+5):hover {
-  border-bottom: 4px solid #10222c;
-}
 .navigation-menu .menu-list li:nth-child(6n+6) {
   background: #152836;
 }
-.navigation-menu .menu-list li:nth-child(6n+6):hover {
-  border-bottom: 4px solid #091219;
+@media (min-width: 50em) {
+  .navigation-menu .menu-list:hover a {
+    color: rgba(249, 249, 249, 0.5);
+  }
+  .navigation-menu .menu-list li {
+    width: 16.667%;
+  }
+  .navigation-menu .menu-list li a {
+    height: 9em;
+    width: auto;
+    -webkit-transition: height 0.5s ease-in-out;
+  }
+  .navigation-menu .menu-list li a:hover {
+    height: 10em;
+  }
+  .navigation-menu .menu-list li a:hover i {
+    box-shadow: 0 0 0 0.5em rgba(255, 255, 255, 0.2);
+  }
+  .navigation-menu .menu-list li a:hover .label {
+    margin-top: 3.2em;
+  }
+  .navigation-menu .menu-list li a .icon {
+    font-size: 1.8em;
+    display: block;
+    padding-top: 1.4em;
+    text-align: center;
+  }
+  .navigation-menu .menu-list li a .icon i {
+    padding: 0.4em;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 0.8em transparent;
+    -webkit-transition: box-shadow 0.5s ease-in-out;
+  }
+  .navigation-menu .menu-list li a .label {
+    display: block;
+    margin-top: 2.1em;
+    text-align: center;
+    -webkit-transition: margin 0.5s ease-in-out;
+  }
+  .navigation-menu .menu-list li:nth-child(6n+1):hover {
+    border-bottom: 4px solid #ae4e01;
+  }
+  .navigation-menu .menu-list li:nth-child(6n+2):hover {
+    border-bottom: 4px solid #bf7514;
+  }
+  .navigation-menu .menu-list li:nth-child(6n+3):hover {
+    border-bottom: 4px solid #0c6e95;
+  }
+  .navigation-menu .menu-list li:nth-child(6n+4):hover {
+    border-bottom: 4px solid #0a4b75;
+  }
+  .navigation-menu .menu-list li:nth-child(6n+5):hover {
+    border-bottom: 4px solid #10222c;
+  }
+  .navigation-menu .menu-list li:nth-child(6n+6):hover {
+    border-bottom: 4px solid #091219;
+  }
+}
+@media (min-width: 32.5em) and (max-width: 50em) {
+  li {
+    width: 50%;
+    display: block;
+  }
+  li a {
+    display: block;
+    font-size: 1em;
+    padding: .8em;
+    width: auto;
+    color: rgba(249, 249, 249, 0.9);
+  }
+  li a .icon {
+    display: inline-block;
+    width: 50%;
+  }
+  li a .label {
+    display: inline-block;
+  }
 }
